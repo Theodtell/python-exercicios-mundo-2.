@@ -11,9 +11,11 @@ reta2 = int(input('Informe o segundo lado: '))
 reta3 = int(input('Informe o terceiro lado: '))
 
 if reta1 < reta2 + reta3 and reta2 < reta1 + reta3 and reta3 < reta1 + reta2:
-    if reta1 == reta2 and reta2 == reta3:
-        print('Esse é um triângulo equilátero')
-    elif reta1 == reta2 != reta3 or reta2 == reta3 != reta1 or reta3 == reta1 != reta2:
-        print('Esse é um tringulo Isósceles')
+    if reta1 == reta2 == reta3:
+        print('Pode formar um triângulo equilátero')
+    elif reta1 != reta2 != reta3 != reta1:
+        print ('Pode formar um triângulo escaleno')
     else:
-        print ('Esse é um triângulo escaleno')
+        print('Pode formar um tringulo Isósceles')
+else:
+    print('Não pode formar um triângulo')

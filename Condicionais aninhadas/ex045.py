@@ -1,24 +1,25 @@
 #Crie um programa que faça o computador jogar jokenpô com você
-
 import random
 
 print(10*'=','\033[1;32mBEM VINDO AO JOKENPÔ\033[m',10*'=')
 
 #1 - pedra; 2 - papel; 3 - tesoura
 jogadas = ['Pedra', 'Papel', 'Tesoura']
-opcao_jogador = int(input('Escola a sua jogada:'
-'\n1- pedra'
-'\n2-papel'
-'\n3-tesoura'
-'\n'))
+opcao_jogador = int(input('''Escola a sua jogada:
+[0]- pedra
+[1]-papel
+[2]-tesoura
+'''))
+
 #validação do comando
-if opcao_jogador not in [1, 2, 3]:
+
+if opcao_jogador not in [0, 1, 2]:
     print('Não entendi o seu comando, tente novamente!')
 else:
-    opcao_pc = random.randint(1,3)
+    opcao_pc = random.randint(0,2)
 
-    print(f'O jogador {jogadas[opcao_jogador-1]}!')
-    print(f'O computador escolheu {jogadas[opcao_pc-1]}!')
+    print(f'O jogador {jogadas[opcao_jogador]}!')
+    print(f'O computador escolheu {jogadas[opcao_pc]}!')
 
 #empate
 

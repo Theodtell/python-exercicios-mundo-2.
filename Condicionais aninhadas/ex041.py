@@ -1,10 +1,10 @@
-'''A confederação nacional de natação precisa de um programa que lei o ano de nascimento de uma atleta e mostre a sua categoria de acordo com a idade:
+"""A confederação nacional de natação precisa de um programa que lei o ano de nascimento de uma atleta e mostre a sua categoria de acordo com a idade:
 até 9 - mirim
 até 14 - infantil
 ate 19 - junior
 até 20 - sênior
 Acima - master
-'''
+"""
 
 from datetime import date
 

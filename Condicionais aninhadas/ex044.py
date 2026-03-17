@@ -8,15 +8,22 @@ em até 2x no cartão - preço normal
 
 print(10*'=','CALCULADORA DE PREÇOS',20*'=')
 valor = float(input('Digite o valor do produto: '))
-pagamento = str(input('Informe a forma de pagamento (digite apenas o número:\n1 - À vista dinheiro/cheque\n2 - À vista no cartão\n3 - 2X no cartão\n4 - 3X ou mais no cartão\n'))
+pagamento = int(input('''Informe a forma de pagamento (digite apenas o número:
+[1] - À vista dinheiro/cheque
+[2] - À vista no cartão
+[3] - 2X no cartão
+[4] - 3X ou mais no cartão
+'''))
 
-if pagamento == '1':
+if pagamento not in [1,2,3,4]:
+    print('Opção inválida')
+elif pagamento == 1:
     novo_valor = valor - (valor * 0.10)
     print('O valor a ser pago é de R$ {}'.format(novo_valor))
-elif pagamento == '2':
+elif pagamento == 2:
     novo_valor = valor - (valor * 0.05)
     print('O valor a ser pago é de R$ {}'.format(novo_valor))
-elif pagamento == '4':
+elif pagamento == 3:
     novo_valor = valor + (valor * 0.20)
     print('O valor a ser pago é de R$ {}'.format(novo_valor))
 else:
