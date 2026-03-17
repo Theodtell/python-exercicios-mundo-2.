@@ -5,7 +5,6 @@ print(20*'*','JOGO DA ADVINHAÇÃO',20*'*')
 # gerador de número aleatório
 n = random.randint(1,10)
 contador = 1
-print(n)
 #pede a primeira tentativa
 print('Olá! Sou o seu computador e acabei de pensar em um número entre 0 e 10.\nSerá que você consegue adivinhar?!')
 tentativa = int(input('Qual é o seu palpite? '))
