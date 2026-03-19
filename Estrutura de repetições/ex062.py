@@ -10,10 +10,10 @@ while mais != 0:
     contador = 0
     total += mais
     while contador < mais:
-        print('{} -> '.format(termo), end='')
+        print(f'{termo} -> ', end='')
         termo += razao
         contador += 1
     print('PAUSA')
     mais = int(input('Quantos termos você quer mostrar a mais? '))
 
-print('Progressão finalizada com {} termos mostrados.'.format(total))
+print(f'Progressão finalizada com {total} termos mostrados.')

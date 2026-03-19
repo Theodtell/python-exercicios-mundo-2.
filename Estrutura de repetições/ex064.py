@@ -12,5 +12,5 @@ while True:
     else:
         soma += num
         cont += 1
-print('Você digitou {} números e a soma foi {}'.format(cont, soma))
+print(f'Você digitou {cont} números e a soma foi {soma}')
 print('FIM')
