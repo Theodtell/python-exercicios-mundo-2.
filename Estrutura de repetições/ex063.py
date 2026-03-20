@@ -8,7 +8,7 @@ t1 = 0
 t2 = 1
 print ('~'*30)
 print(f'{t1} -> {t2}', end='')
-#iniciando o contador pq t1 e t2 são fixos
+#iniciando o cont_produtos pq t1 e t2 são fixos
 cont = 3
 while cont <= n:
     t3 = t1 + t2
